@@ -93,6 +93,7 @@ top blogs styles
      width: 224px;
      height: 104px;
  }
+
  /*aki poriston a thakele kono gap hobe na
 ---------------------- */
 .course-info{
@@ -108,4 +109,52 @@ color: #ffc014;
 }
 .fa-star.empty{
     color: #aeaeae;
+}
+.margin-dibo{
+    margin-left: 30px;
+}
+.course-duration{
+    background-color: rgba(255, 95, 228, 0.726);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+.fa-clock{
+    color: #fc74c1;
+}
+
+/* -------------
+    Media Quaris
+-------------- */
+@media only screen and (max-width:688px){
+    .players, .blogs, .courses{
+       
+        grid-template-columns: repeat(1,1fr);
+    }
+    .player, .blog{
+        flex-direction: column;
+    }
+    .container{
+        width: 100%;
+    }
+    
+    /* ---------------------
+    Tablet Caption Responsive
+    ------------------------- */
+    @media only screen and (min-width:688px) and (max-width:992px){
+        .container{
+            width: 100%;
+        }
+        .players, .courses{
+            grid-template-columns: repeat(2, 1fr);
+        }
+       
+        .blogs{
+            grid-template-columns: repeat(1, 1fr);
+        }
+       
+        
+    }
+    
+    
 }
