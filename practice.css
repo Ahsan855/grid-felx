@@ -1,0 +1,154 @@
+/*---------------------------
+ google font for all propartis
+----------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Lobster&family=PT+Sans:wght@400;700&family=Poppins:ital,wght@0,400;0,500;0,600;0,800;1,400;1,500;1,600;1,700&family=Rubik:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+
+/*-----------------------------------
+all utilitis or commonm for my site 
+-------------------------------------- */
+body{
+    font-family: 'Inter', sans-serif;
+    background-color: #f3f1ff;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container{
+    background-color: #ffffff;
+    width: 870px;
+    padding: 30px;
+    margin-top: 21px;
+    border-radius: 5px;
+}
+/* ---------------------------
+Top players style for me
+--------------------------- */
+.top-players{
+    margin-bottom: 30px;
+}
+.section-title{
+    color: #562eff;
+    font-size: 24px;
+    margin-top: 3px;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 50px 15px;
+}
+.player{
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+}
+.player .player-name{
+    margin-left: 10px;
+    font-size: 18px;
+}
+.player img{
+    width: 56px;
+    height: 56px;
+}
+hr{
+    margin-bottom: 30px;
+}
+
+/* =======================
+top blog style for me 
+=======================*/
+
+.blogs{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+
+}
+.blog{
+    display: flex;
+}
+.blog img{
+    width: 117px;
+    height: 117px;
+}
+.blog-info{
+    margin-left: 30px;
+}
+.blog-author a{
+    text-decoration: none;
+    font-size: 18px;
+    margin-left: 5px;
+}
+
+/* ==============================
+this is courses section for css 
+=============================== */
+.courses{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 24px;
+}
+
+.course-info{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.course .course-banner img{
+    width: 224px;
+    height: 104px;
+}
+.fa-stat{
+    font-size: 12px;
+}
+.fa-star.filed{
+    color: #ffc014;
+}
+.fa-star.empty{
+    color: #dad3d3;
+}
+.margin-dibo{
+    margin-left: 30px;
+}
+.course-duration{
+    background-color: rgba(255, 95, 228, 0.726);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+.fa-clock{
+    color: #fc74c1;
+}
+
+/* ===========================================
+  Risponsive for my new practice websites 
+=========================================== */
+@media only screen and (max-width:688px) {
+    .players, .blogs, .courses{
+       
+        grid-template-columns: repeat(1,1fr);
+    }
+    .player, .blog{
+        flex-direction: column;
+    }
+    .container{
+        width: 100%;
+    }
+    
+}
+@media only screen and (min-width:688px) and (max-width:992px){
+    .container{
+        width: 100%;
+    }
+    .players, .courses{
+        grid-template-columns: repeat(2, 1fr);
+    }
+   
+    .blogs{
+        grid-template-columns: repeat(1, 1fr);
+    }
+   
+    
+}
